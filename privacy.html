@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="세구 봇 개인정보 처리방침">
+    <title>개인정보 처리방침 | 세구 봇</title>
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">세구 봇 <span>ARAM Mayhem</span></a>
+      <nav aria-label="주요 메뉴"><a href="index.html">소개</a><a href="privacy.html" aria-current="page">개인정보 처리방침</a><a href="terms.html">이용 약관</a></nav>
+    </header>
+    <main class="legal-page">
+      <p class="eyebrow">PRIVACY POLICY</p>
+      <h1>개인정보 처리방침</h1>
+      <p class="effective">시행일: 2026년 10월 26일</p>
+      <p>세구 봇(이하 “봇”)은 친구 Discord 서버의 ARAM Mayhem 모집을 돕기 위한 비공개 커뮤니티용 봇입니다. 이 방침은 봇이 어떤 정보를 처리하고, 왜 처리하며, 어떻게 삭제할 수 있는지 설명합니다.</p>
+
+      <h2>1. 처리하는 정보</h2>
+      <ul>
+        <li><strong>Discord 모집 기능:</strong> 서버 ID, 채널 ID, 메시지 ID, 모집 작성자 ID, 참가자·대기자 Discord 사용자 ID, 서버 표시 이름, 모집 제목 및 참가·대기 시각을 처리합니다.</li>
+        <li><strong>Riot ID 연결 기능:</strong> 사용자가 <code>/riot 등록</code> 명령으로 직접 입력한 Riot ID(게임이름·태그)와 Riot Account API가 반환한 PUUID를 처리합니다.</li>
+        <li><strong>운영 정보:</strong> 오류 해결과 안정적인 운영을 위해 시간, 오류 내용, 봇 상태와 같은 기술 로그를 처리할 수 있습니다.</li>
+      </ul>
+      <p>봇은 Discord 메시지 본문, Discord 비밀번호, Riot 계정 비밀번호, 결제 정보, 전적·랭크·게임 플레이 데이터를 수집하지 않습니다.</p>
+
+      <h2>2. 처리 목적</h2>
+      <ul>
+        <li>5인 모집, 대기열, 취소, 자동 승격 및 재시작 후 상태 복구</li>
+        <li>사용자가 요청한 Riot ID 연결과 본인 확인</li>
+        <li>서비스 보안, 오류 분석, 백업 및 부정 이용 방지</li>
+      </ul>
+
+      <h2>3. 보관 위치와 기간</h2>
+      <p>모집과 Riot ID 연결 정보는 봇 운영자가 관리하는 SQLite 데이터베이스 및 그 운영 백업에 보관됩니다. Riot ID 연결 정보는 사용자가 <code>/riot 해제</code>를 실행하면 운영 데이터베이스에서 삭제됩니다. 백업본에는 최대 7개의 순환 백업 주기 동안 해당 정보가 남을 수 있으며, 그 이후 자동 삭제됩니다.</p>
+      <p>모집 기록의 보관 기간은 운영 및 분쟁 대응에 필요한 기간으로 제한하며, 서버 운영자가 더 이상 필요하지 않다고 판단하면 삭제합니다.</p>
+
+      <h2>4. 제3자 제공 및 처리 위탁</h2>
+      <p>봇은 Discord 플랫폼에서 작동하므로 Discord의 서비스 운영 과정에서 관련 상호작용 정보가 처리됩니다. Riot ID 연결을 요청한 경우에만 Riot Games의 Riot Account API에 입력한 Riot ID를 전송하여 계정을 조회합니다. 봇은 정보를 광고, 판매 또는 마케팅 목적으로 제3자에게 제공하지 않습니다.</p>
+
+      <h2>5. 이용자의 선택권과 삭제 요청</h2>
+      <p>Riot ID 연결은 선택 사항입니다. 연결을 원하지 않으면 명령을 사용하지 않으면 됩니다. 이미 연결했다면 <code>/riot 해제</code>로 직접 삭제할 수 있습니다. 모집 또는 기타 정보의 삭제 요청은 해당 Discord 서버의 운영자에게 문의하세요.</p>
+
+      <h2>6. 보호 조치</h2>
+      <p>Riot API 키와 Discord 봇 토큰은 소스 코드와 분리된 환경 설정 파일에 보관하며 공개 저장소에 올리지 않습니다. 접근은 봇 운영에 필요한 관리자에게만 제한합니다. 다만 인터넷 기반 서비스에는 완전한 보안을 보장할 수 없으므로, 민감한 정보는 봇 명령에 입력하지 마세요.</p>
+
+      <h2>7. 변경과 문의</h2>
+      <p>이 방침은 기능 또는 처리 방식이 바뀌면 갱신될 수 있습니다. 변경된 버전은 이 페이지에 게시합니다. 문의·삭제 요청은 Discord 서버 운영자에게 보내주세요.</p>
+    </main>
+    <footer><span>© 2026 세구 봇</span><a href="index.html">소개</a><a href="terms.html">이용 약관</a></footer>
+  </body>
+</html>
